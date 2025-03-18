@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Disclaimer Page</title>
     <style>
         body {
@@ -23,65 +23,43 @@
         .image-container {
             position: relative;
         }
+        .image-container a {
+            display: block;
+        }
         .image-container img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
-        .whatsapp-link {
-            display: inline-block;
-            margin-top: 15px;
-            background: #25D366;
-            color: #fff;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        .whatsapp-link:hover {
-            background: #1ebc5c;
-        }
-        .disclaimer {
+        .disclaimer-section {
             margin-top: 20px;
             padding: 20px;
-            background: rgba(255, 0, 0, 0.2);
-            color: #ff4d4d;
-            border: 1px solid #ff4d4d;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 16px;
+            background: #222;
+            color: #fff;
+            border-radius: 10px;
             text-align: left;
         }
-        .disclaimer h3 {
-            margin: 0 0 10px;
-            font-size: 20px;
-            color: #ff4d4d;
-        }
-        .support {
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: bold;
+        .disclaimer-section p {
+            font-size: 16px;
+            margin: 10px 0;
+            line-height: 1.8;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="image-container">
-            <img src="https://raw.githubusercontent.com/sumit-sikar/Maharani/main/1.png" alt="WhatsApp Contact">
-            <a href="https://api.whatsapp.com/send?phone=917240420205&text=Hi%2C%20I%20want%20ID." class="whatsapp-link">Chat on WhatsApp</a>
+            <a href="https://api.whatsapp.com/send?phone=917240420205&text=Hi%2C%20I%20want%20ID.">
+                <img src="https://raw.githubusercontent.com/sumit-sikar/Maharani/main/1.png" alt="WhatsApp Contact" />
+            </a>
         </div>
         
-        <div class="disclaimer">
-            <h3>⚠ Important Disclaimer</h3>
-            <p>This website is only for users aged 18 and above. If you are from Telangana, Odisha, Assam, Sikkim, or Nagaland, please exit this site immediately.</p>
-        </div>
-        
-        <div class="support">
-            ⚠ Be aware of fraudsters, we only deal via WhatsApp.<br>
-            🔄 24/7 Support<br>
-            📚 We have a team of experts who can guide you properly via WhatsApp.
+        <!-- Disclaimer Section -->
+        <div class="disclaimer-section">
+            <p><strong>Disclaimer:</strong> This website is only for 18+ users. Please leave this site if you are from Telangana, Odisha, Assam, Sikkim, or Nagaland.</p>
+            <p><strong>Note:</strong> Be aware of fraudsters, we only deal via WhatsApp.</p>
+            <p><strong>Support:</strong> 24/7 Support available.</p>
+            <p><strong>Expert Guidance:</strong> We have a team of experts who can guide you properly via WhatsApp.</p>
         </div>
     </div>
 </body>
